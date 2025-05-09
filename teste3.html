@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn-comprar" onclick="comprar()">Comprar produto</button>
+    <p id="produto"></p>
+
+    <script>
+
+        function comprar() {
+            
+        let produto1 = (window.prompt("Qual é o produto que você está comprando?"));
+        let preço = Number(window.prompt(`Quanto custa o ${produto1} que você está comprando?`));
+        let pagamento = Number(window.prompt(`Qual o valor você deu pra pagar o ${produto1}?`));
+        troco = pagamento - preço
+
+        alert(`Você comprou ${produto1} que custou R$${preço}. \n O total deu R$${pagamento} e você vai receber R$${troco} de troco. \n Obrigado pela preferência e volte Sempre! `);
+        
+        }
+
+    </script>
+    
+</body>
+</html>
