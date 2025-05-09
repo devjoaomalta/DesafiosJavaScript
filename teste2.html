@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste 2</title>
+</head>
+<body>
+
+    <button id="btn-notas" onclick="notas()">Entrar com as notas</button>
+    <p id="resultado"></p>
+
+    <script>
+    
+      
+          
+        function notas() {
+
+            let nome = (window.prompt("Qual é o nome do aluno?"));
+            let nota1 = Number (window.prompt(`Qual a primeira nota de ${nome}`));
+            let nota2 = Number (window.prompt(`Qual a segunda nota de ${nome}`));
+            resultado = (nota1 + nota2)/2
+
+            if(resultado >= 6.0) {
+                document.getElementById("resultado").innerHTML = `Com as notas ${nota1} e ${nota2} a média é ${resultado}. \n Com a média acima de 6.0, o(a) aluno(a) está APROVADO `;
+            }
+            
+            else if(resultado > 3.0 && resultado < 6.0) {
+                document.getElementById("resultado").innerHTML = `Com as notas ${nota1} e ${nota2} a média é ${resultado}. \n Com a média entre 3.0 e 6.0, o(a) aluno(a) está em RECUPERAÇÃO `;
+            }
+                
+            else {
+                document.getElementById("resultado").innerHTML = `Com as notas ${nota1} e ${nota2} a média é ${resultado}. \n Com a média abaixo de 3.0, o(a) aluno(a) está REPROVADO `;
+            } 
+
+            }
+
+    </script>
+    
+</body>
+</html>

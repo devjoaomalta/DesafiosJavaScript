@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste 1</title>
+</head>
+<body>
+
+    <button id="btn-calculo" onclick="bask()">Calcular</button>
+    <p id="resultado"></p>
+
+    <script> 
+        
+        function bask() {
+           
+            let a = Number(window.prompt("Digite o 'a' da equação:"));
+            let b = Number(window.prompt("Digite o 'b' da equação:"));
+            let c = Number(window.prompt("Digite o 'c' da equação:"));
+            let resultadobask = ((b**2)-4*(a*c));
+            document.getElementById("resultado").innerHTML = `O Delta da equação é: ${resultadobask}`
+        
+        }
+
+    </script>
+    
+</body>
+</html> 
